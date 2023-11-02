@@ -61,7 +61,7 @@ export const Listing = () => {
             {listing.imageUrls.map((url) => (
               <SwiperSlide key={url}>
                 <div
-                  className='h-[300px]'
+                  className='h-[400px]'
                   style={{
                     background: `url(${url}) center no-repeat`,
                     backgroundSize: 'cover',
@@ -124,7 +124,7 @@ export const Listing = () => {
                 <FaBath className='text-lg' />
                 {listing.bathrooms > 1
                   ? `${listing.bathrooms} baths `
-                  : `${listing.bathrooms} bath `}
+                  : `${listing.bathrooms} bath `} 
               </li>
               <li className='flex items-center gap-1 whitespace-nowrap '>
                 <FaParking className='text-lg' />
